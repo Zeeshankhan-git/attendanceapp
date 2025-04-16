@@ -5,4 +5,5 @@ COPY . .
 
 # You may not need dos2unix on a Mac, but you can keep it if required
 RUN apt-get update && apt-get install -y dos2unix && dos2unix ./mvnw
-RUN mvn -DskipTests clean package
+RUN mvn clean package -DskipTests
+
